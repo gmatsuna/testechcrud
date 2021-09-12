@@ -53,7 +53,8 @@ class HomeController extends Controller
     }
 
     public function t2Result(Request $request){
-        $amount=$request->input('amount');
+        // $amount=$request->input('amount');
+        $amount=$request->amount;
         return view('teste2')->with(compact('amount'));
     }
 }

@@ -51,7 +51,7 @@
                     <div class="text-lg-left">
                         @if (isset($amount))
                             <?php
-                                echo ('O valor a ser sacado é de R$ '.$amount.',00<br><br>');
+                                echo ('<strong>O valor a ser sacado é de R$ '.$amount.',00<br><br></strong>');
                                 $currBill = 100;
                                 $totBills = 0;
                                 while (true) {
