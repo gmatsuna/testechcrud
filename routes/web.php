@@ -24,7 +24,8 @@ Auth::routes();
 Route::get('/teste1', 'HomeController@teste1')->name('teste1')->middleware('auth');
 Route::post('/teste1', 'HomeController@t1Result')->name('t1Result')->middleware('auth');
 Route::get('/teste2', 'HomeController@teste2')->name('teste2')->middleware('auth');
-Route::post('/teste2', 'HomeController@t2Result')->name('t2Result')->middleware('auth');
+Route::post('/teste2', 'HomeController@teste2')->name('t2Result')->middleware('auth');
+// Route::post('/teste2', 'HomeController@t2Result')->name('t2Result')->middleware('auth');
 
 Route::get('/home', 'ClientesController@index')->name('home')->middleware('auth');
 Route::get('/clientes/{id}', 'ClientesController@cadastro')->name('cadastro')->middleware('auth');

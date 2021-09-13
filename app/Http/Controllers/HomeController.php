@@ -47,14 +47,9 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function teste2()
+    public function teste2(Request $request)
     {
-        return view('teste2');
-    }
-
-    public function t2Result(Request $request){
-        // $amount=$request->input('amount');
-        $amount=$request->amount;
+        $amount=$request->input('amount');
         return view('teste2')->with(compact('amount'));
     }
 }
